@@ -1,0 +1,502 @@
+footer {
+    /* position: fixed;
+    bottom: 0px; */
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+/* CSS GRID 1 */
+
+.apuracao-container {
+  display: inline-grid;
+  position: relative;
+  grid-template-columns: 16% 1% 12% 2% 23% 2% 23% 1% 18%;
+  text-transform: uppercase;
+  width: 1000px;
+  max-height: 100px;
+  font-family: Roboto;
+  font-weight: bold;
+  background: #464646;
+  align-self: center;
+}
+
+.titulo {
+    display: inline-grid;
+    width: 100%;
+    height: 100px;
+    color: #3e3e3e;
+    grid-template-rows: 40% 20%;
+    background-color: #707070;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.titulo > .p1 {
+    font-size: 1.1875rem;
+    align-self: center;
+}
+.titulo > .p2 {
+    align-self: center;
+    font-size: 0.875rem;
+}
+.figuGeo1 {
+      width: 0;
+      height: 0;
+      border-top: 100px solid #707070;
+      border-right: 100px solid transparent;
+}
+
+.urnas {
+    display: grid;
+    width: 100%;
+    color: #3d3d3d;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+.urnas > span {
+  align-items: center;
+    align-self: center;
+    text-align: center;
+}
+.urnas > span >.porc-urnas {
+    font-size: 1.625rem;
+    color: #cbcbcb;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+.figuGeo2 {
+    display: grid;
+    width: 100%;
+    font-family: Roboto;
+    color: #3d3d3d;
+    background: #818181;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.candidato1 {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 30% 55%;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    align-items: center;
+    align-self: center;
+}
+.candidato1 > .infos {
+  display: grid;
+  font-size: 1.0625rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+.candidato1 > .infos > .partido1 {
+  font-size: 0.75rem;
+}
+.candidato1 > .infos > .votos1 {
+  display: grid;
+  font-size: 1.625rem;
+  color: #cbcbcb;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+.candidato1 > .img1 {
+  width: 80%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;  
+}
+
+.candidato2 {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 30% 68%;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    align-items: center;
+    align-self: center;
+}
+.candidato2 > .infos {
+  display: grid;
+  font-size: 1.0625rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+.candidato2 > .infos > .partido2 {
+  font-size: 0.75rem;
+}
+.candidato2 > .infos > .votos2 {
+  display: grid;
+  font-size: 1.625rem;
+  color: #cbcbcb;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+.candidato2 > .img2 {
+  width: 80%;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;  
+}
+
+.divisao1 {
+  width: 3px;
+  background-color: #707070;
+  border-radius: 2px;
+  padding: 0px;
+  grid-column-gap: 0px 10px;
+  margin-top: 15px;
+  height: 70%;
+
+}
+.divisao2 {
+  width: 3px;
+  background-color: #3d3d3d;
+  border-radius: 2px;
+  padding: 0px;
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 70%;
+}
+.link {
+  display: grid;
+  font-size: 1.0625rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  grid-column: 9;
+  grid-row: 1;
+}
+.link a {
+  color: #727272;
+  grid-column-gap: 10px;
+  text-decoration: none;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+/* Querys */
+@media (max-width: 960px) {
+  .apuracao-container {
+    max-width: 95vw;
+    max-height: 95vh;
+    margin: 0 auto;
+    font-size: 0.765rem;
+  }
+
+}
+
+@media (min-width: 581px) and (max-width:730px){
+  .apuracao-container {
+    width: 100%;
+    max-height: 100%;
+    grid-template-columns: 2% 36% 2% 36% 2% 20%;
+    font-size: 0.765rem;
+  }
+  .apuracao-container > div{
+    font-size: 0.765rem;
+  }
+  .titulo {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    box-shadow: 0px 2px 1px 1px;
+    padding-top: 6px;
+    grid-column: 1/8;
+    grid-row: 1;
+  }
+  .titulo > .p1 {
+    font-size: 0.765rem;
+  }
+  .titulo > .p2 {
+    font-size: 0.675rem;
+  }
+  .figuGeo1 {
+    display: none;
+  }
+  .urnas {
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+
+  }
+  .urnas > span > .porc-urnas {
+    font-size: 0.765rem;
+  }
+  .figuGeo2 {
+    display:none;
+  }
+  .candidato1 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .candidato1 > .img1 {
+    width: 8vw;
+  }
+  .candidato1 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato1 > .infos > .partido1 {
+    font-size: 0.600rem;
+  } 
+  .candidato1 > .infos > .votos1 {
+    font-size: 0.765rem;
+  }
+  .divisao1 {
+    grid-column: 3;
+    grid-row: 2;
+    height: 65%;
+  }
+  .candidato2 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .candidato2 > .img2 {
+    width: 8vw;
+  }
+  .candidato2 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato2 > .infos > .partido2 {
+    font-size: 0.600rem;
+  } 
+  .candidato2 > .infos > .votos2 {
+    font-size: 0.765rem;
+  }
+  .divisao2 {
+    grid-column: 5;
+    grid-row: 2;
+    height: 65%;
+  }
+.link {
+  font-size: 0.500rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  grid-column: 6;
+  grid-row: 2;
+  margin: 10px;
+}
+  .link > a {
+    font-size: 0.625rem;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+}
+@media (min-width:361px) and (max-width: 580px){
+.apuracao-container {
+    width: 100%;
+    max-height: 100%;
+    grid-template-columns: 2% 36% 2% 36% 2% 20%;
+    font-size: 0.765rem;
+  }
+  .apuracao-container > div{
+    font-size: 0.765rem;
+  }
+  .titulo {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    box-shadow: 0px 2px 1px 1px;
+    padding-top: 6px;
+    grid-column: 1/8;
+    grid-row: 1;
+  }
+  .titulo > .p1 {
+    font-size: 0.765rem;
+  }
+  .titulo > .p2 {
+    font-size: 0.675rem;
+  }
+  .figuGeo1 {
+    display: none;
+  }
+  .urnas {
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+
+  }
+  .urnas > span > .porc-urnas {
+    font-size: 0.765rem;
+  }
+  .figuGeo2 {
+    display:none;
+  }
+  .candidato1 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .candidato1 > .img1 {
+    width: 10vw;
+  }
+  .candidato1 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato1 > .infos > .partido1 {
+    font-size: 0.600rem;
+  } 
+  .candidato1 > .infos > .votos1 {
+    font-size: 0.765rem;
+  }
+  .divisao1 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .candidato2 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .candidato2 > .img2 {
+    width: 10vw;
+  }
+  .candidato2 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato2 > .infos > .partido2 {
+    font-size: 0.600rem;
+  } 
+  .candidato2 > .infos > .votos2 {
+    font-size: 0.765rem;
+  }
+  .divisao2 {
+    grid-column: 5;
+    grid-row: 2;
+  }
+.link {
+  font-size: 0.500rem;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  grid-column: 6;
+  grid-row: 2;
+  margin: 10px;
+}
+  .link > a {
+    font-size: 0.625rem;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px){
+  .apuracao-container {
+    width: 100%;
+    max-height: 100%;
+    grid-template-columns: 2% 36% 2% 36% 2% 20%;
+    font-size: 0.765rem;
+  }
+  .apuracao-container > div{
+    font-size: 0.765rem;
+  }
+  .titulo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 2px 1px 1px;
+    padding-top: 6px;
+    grid-column: 1/8;
+    grid-row: 1;
+  }
+  .titulo > .p1 {
+    font-size: 0.765rem;
+  }
+  .titulo > .p2 {
+    font-size: 0.675rem;
+  }
+  .figuGeo1 {
+    display: none;
+  }
+  .urnas {
+    -webkit-transform: skew(0deg);
+    -moz-transform: skew(0deg);
+    -o-transform: skew(0deg);
+
+  }
+  .urnas > span > .porc-urnas {
+    font-size: 0.765rem;
+  }
+  .figuGeo2 {
+    display:none;
+  }
+  .candidato1 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .candidato1 > .img1 {
+    width: 10vw;
+  }
+  .candidato1 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato1 > .infos > .partido1 {
+    font-size: 0.600rem;
+  } 
+  .candidato1 > .infos > .votos1 {
+    font-size: 0.765rem;
+  }
+  .divisao1 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .candidato2 {
+    margin: 10px;
+    width: 100%;
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .candidato2 > .img2 {
+    width: 10vw;
+  }
+  .candidato2 > .infos{
+    font-size: 0.675rem;
+  }
+  .candidato2 > .infos > .partido2 {
+    font-size: 0.600rem;
+  } 
+  .candidato2 > .infos > .votos2 {
+    font-size: 0.765rem;
+  }
+  .divisao2 {
+    grid-column: 5;
+    grid-row: 2;
+  }
+.link {
+    font-size: 0.500rem;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    grid-column: 6;
+    grid-row: 2;
+    margin: 10px;
+}
+.link > a {
+    font-size: 0.625rem;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+}
